@@ -19,11 +19,10 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Configuring departments
+- Configuring Teams and agents
+- Configuring users (customers)
+- Configuring SLA's
 
 <h2>Configuration Steps</h2>
 
@@ -39,11 +38,23 @@ You can switch between the <strong>Admin Panel</strong> and the <strong>Agent Pa
 The <strong>Admin Panel</strong> provides full control over system settings, user roles, and permissions, while the <strong>Agent Panel</strong> is designed for support staff to manage and respond to tickets.
 </p>
 
+![image](https://github.com/user-attachments/assets/57f683bd-38fd-4710-ae29-c4fce144d19f)
+
+
+
+
+
 <h3>Step 2: Configuring Roles and Departments</h3>
 <p>
 The first step in setting up user access control is configuring <strong>Roles</strong>. In the <strong>Admin Panel</strong>, navigate to <em>Agents → Roles</em>. Here, you can create and customize roles based on the level of access needed.  
 For example, if you create a role titled <strong>"Supreme Admin"</strong> and check all permission boxes, this role will have unrestricted access across the system.
 </p>
+
+![image](https://github.com/user-attachments/assets/c5f51c33-99ca-4e7d-b21b-54868e5756f1)
+
+![image](https://github.com/user-attachments/assets/008e4c91-18a1-4cfd-bb28-bb2524920cd7)
+
+
 
 <p>
 Next, we will configure <strong>Departments</strong> to determine ticket visibility. When a ticket is assigned to a specific department, only agents within that department can view and manage it.  
@@ -52,11 +63,19 @@ To configure departments:
 
 <ul>
   <li>Go to <strong>Admin Panel → Agents → Departments</strong>.</li>
+
+![image](https://github.com/user-attachments/assets/1b8643a9-ec7f-4d7c-a41a-31446c011850)
+
+  
   <li>Click <strong>"Add New Department"</strong>.</li>
   <li>Name the department <strong>"SysAdmins"</strong>.</li>
   <li>Adjust settings to define ticket visibility and departmental responsibilities.</li>
   <li>Save the changes.</li>
 </ul>
+
+![image](https://github.com/user-attachments/assets/ef644f2b-cd27-4753-9b91-c191b8da5b3d)
+
+
 
 <p>
 Departments help organize ticket management, ensuring tickets reach the appropriate team, such as <em>Help Desk</em>, <em>SysAdmins</em>, or <em>Networking</em>.
@@ -72,8 +91,16 @@ Now, we will configure <strong>Teams</strong> to group agents from different dep
 
 <ul>
   <li>Go to <strong>Admin Panel → Agents → Teams</strong>.</li>
+
+![image](https://github.com/user-attachments/assets/faacb6d3-7367-4347-864f-15762cfcfbaf)
+
+  
   <li>Click <strong>"Add New Team"</strong>.</li>
   <li>Name the team <strong>"Online Banking"</strong>.</li>
+
+![image](https://github.com/user-attachments/assets/4494b0fd-de25-4a86-a9a4-03c77f99d272)
+
+  
   <li>Assign agents from different departments who will handle banking-related tickets.</li>
   <li>Save the changes.</li>
 </ul>
@@ -84,8 +111,16 @@ Next, we will configure user ticket permissions by requiring users to register b
 
 <ul>
   <li>Go to <strong>Admin Panel → Settings → User Settings</strong>.</li>
+
+![image](https://github.com/user-attachments/assets/e65c9db6-0cd2-4427-a198-5fd1983c6818)
+
+  
   <li>UNCHECK the option: <strong>"Unregistered users can create tickets"</strong>.</li>
   <li>Enable: <strong>"Require registration and login to create tickets"</strong>.</li>
+
+![image](https://github.com/user-attachments/assets/28627825-4f6e-49da-9fc6-193919fcc4d0)
+
+  
   <li>Save the changes.</li>
 </ul>
 
@@ -106,6 +141,9 @@ Now, we will add agents to the osTicket system. Agents are the workers who will 
 <ul>
   <li>Go to <strong>Admin Panel → Agents → Add New</strong>.</li>
 </ul>
+
+![image](https://github.com/user-attachments/assets/5f52a82b-e858-450f-bb6e-4b18fd1823a8)
+
 
 <h4>Adding Jane Doe</h4>
 <ul>
@@ -144,6 +182,10 @@ Now, we will add an end user to simulate real-life support tickets. End users ar
   <li>Go to <strong>Agent Panel → Users → Add New</strong>.</li>
 </ul>
 
+
+![image](https://github.com/user-attachments/assets/789a0604-5261-4eeb-8faf-666a882ffb9b)
+
+
 <h4>Adding Karen (Test Customer)</h4>
 <ul>
   <li><strong>Name:</strong> Karen</li>
@@ -179,8 +221,13 @@ Service Level Agreements (SLAs) define the urgency, response time, and resolutio
 
 <ul>
   <li>Go to <strong>Admin Panel → Manage → SLA</strong>.</li>
+
+  ![image](https://github.com/user-attachments/assets/b52a5dcc-3559-4222-a3d4-1942ead0b5e5)
+
   <li>Click <strong>Add New SLA Plan</strong> and enter the following details:</li>
 </ul>
+
+![image](https://github.com/user-attachments/assets/c6037d3d-c34a-4ec4-8457-8545f83ef89c)
 
 <h4>Sev-A (Critical Issues)</h4>
 <ul>
@@ -221,6 +268,10 @@ Help Topics allow users to categorize their support tickets when submitting a re
 
 <ul>
   <li>Go to <strong>Admin Panel → Manage → Help Topics</strong>.</li>
+  
+![image](https://github.com/user-attachments/assets/b3bf79ee-f5b9-4b75-8395-64bbe3eea3d5)
+
+  
   <li>Click <strong>Add New Help Topic</strong> and fill in the following details:</li>
 </ul>
 
@@ -229,6 +280,9 @@ Help Topics allow users to categorize their support tickets when submitting a re
   <li><strong>Title:</strong> Business Critical Outage</li>
   <li><strong>Parent Topic:</strong> Report a Problem</li>
 </ul>
+
+![image](https://github.com/user-attachments/assets/2e4c9b18-2eb1-4322-ac73-37e80206d701)
+
 
 <h4>Help Topic: Personal Computer Issues</h4>
 <ul>
